@@ -1,0 +1,25 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>图片切换</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css"></head>
+<body>
+	<div class="pics_content">
+				<ul class="pics_list clearfix">
+					<li>
+						<img src="images/pic_a.png"></li>
+					<li>
+						<img src="images/pic_b.png"></li>
+					<li>
+						<img src="images/pic_c.png"></li>
+					<li>
+						<img src="images/pic_d.png"></li>
+				</ul>
+			</div>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="picswitch.js"></script>
+<script type="text/javascript">
+	$(".pics_content").picswitch({piclist:$(".pics_list"),timechange:2000});
+</script>
+</body>
+</html>
